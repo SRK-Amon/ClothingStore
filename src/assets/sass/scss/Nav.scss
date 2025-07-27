@@ -1,0 +1,53 @@
+.nav {
+    background-color: #212121;
+    padding: 15px 0;
+
+    &_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu {
+            display: none;
+            width: 40px;
+            height: 40px;
+        }
+
+        .nav_logo {
+            img {
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        .nav_list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 80px;
+
+            .close {
+                display: none;
+                width: 30px;
+                height: 30px;
+            }
+
+            .nav_mini_box {
+                display: none;
+            }
+
+            .nav_link {
+                font-family: var(--o400);
+                font-size: 20px;
+                color: #F0F0F0;
+            }
+        }
+
+        .nav_mini_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 57px;
+        }
+    }
+}

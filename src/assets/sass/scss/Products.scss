@@ -1,0 +1,123 @@
+.products {
+    &_box {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        transform: translateY(-60px);
+
+        .products_list {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            box-shadow: 0px 2px 12.6px 2px #00000040;
+            background: #DEDAD1;
+
+            .products_link {
+                font-family: var(--m700);
+                font-size: 16px;
+                color: #212121;
+
+                & span {
+                    display: block;
+                    padding: 50px 60px;
+                }
+
+                &::after {
+                    content: '';
+                    width: 50%;
+                    height: 2px;
+                    background-color: #212121;
+                    display: block;
+                    justify-self: center;
+                    transform: scale(0);
+                    border-radius: 2px 2px 0 0;
+                    transition: 0.5s;
+                }
+
+                &:hover::after {
+                    transform: scale(1);
+                }
+            }
+
+            .products_line {
+                font-size: 40px;
+            }
+        }
+
+        .products_card_box {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 30px;
+
+            .card_box {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                max-width: 350px;
+                width: 100%;
+                background: #DEDAD1;
+                border: 1px solid #212121;
+                padding: 20px;
+
+                &_img {
+                    width: 241px;
+                    height: 261px;
+                    margin-top: 100px;
+                    margin-bottom: 28px;
+                    align-self: center;
+                }
+
+                &_title {
+                    font-family: var(--m700);
+                    font-size: 20px;
+                    color: #313131;
+                }
+
+                &_brand {
+                    font-family: var(--o700);
+                    font-size: 16px;
+                    color: #939393;
+                    margin-top: 9px;
+                    margin-bottom: 18px;
+                }
+
+                &_discount {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+
+                .card_mini_box {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &_price {
+                        font-family: var(--o700);
+                        font-size: 24px;
+                        color: #212121;
+                    }
+
+                    &_btn {
+                        border: 2px solid #212121;
+
+                        font-family: var(--o700);
+                        font-size: 16px;
+                        color: #212121;
+                        padding: 16px 26px;
+                        background-color: #DEDAD1;
+                    }
+                }
+
+                &_like {
+                    position: absolute;
+                    width: 54px;
+                    height: 54px;
+                }
+            }
+        }
+    }
+}

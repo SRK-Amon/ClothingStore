@@ -1,0 +1,48 @@
+.intro{
+    background-image: url(/src/assets/images/intro_img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 80px;
+        .intro_title{
+            max-width: 920px;
+            width: 100%;
+            color: #F0F0F0;
+
+            font-family: var(--m600);
+            font-size: 48px;
+            line-height: 120%;
+            text-transform: uppercase;
+        }
+        .intro_btn_box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            .intro_btn{
+                width: 255px;
+                height: 86px;
+
+                font-family: var(--m700);
+                font-size: 20px;
+                color: #F0F0F0;
+                background: #212121;
+                border: 2px solid #C3BDB0;
+                &:nth-child(2){
+                    border: 2px solid #C3BDB0;
+                    background: none;
+                }
+            }
+        }     
+    }
+}
