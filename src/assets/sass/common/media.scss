@@ -146,6 +146,7 @@
 
     .footer {
         padding: 70px 0 150px 0;
+
         &_box {
             gap: 130px;
         }
@@ -315,8 +316,10 @@
             }
         }
     }
+
     .footer {
         padding: 60px 0 130px 0;
+
         &_box {
             gap: 110px;
         }
@@ -483,8 +486,10 @@
             }
         }
     }
+
     .footer {
         padding: 50px 0 110px 0;
+
         &_box {
             gap: 90px;
         }
@@ -693,8 +698,10 @@
 
     .footer {
         padding: 40px 0 80px 0;
+
         &_box {
             gap: 70px;
+
             .newsletter_box {
 
                 &_title {
@@ -712,12 +719,14 @@
                     height: 50px;
                 }
             }
-            .footer_mini_box{
-                .item_box{
-                    &_title{
+
+            .footer_mini_box {
+                .item_box {
+                    &_title {
                         font-size: 18px;
                     }
-                    &_link{
+
+                    &_link {
                         font-size: 14px;
                     }
                 }
@@ -876,10 +885,13 @@
             }
         }
     }
+
     .footer {
         padding: 35px 0 80px 0;
+
         &_box {
             gap: 70px;
+
             .newsletter_box {
 
                 &_title {
@@ -897,12 +909,15 @@
                     height: 45px;
                 }
             }
-            .footer_mini_box{
-                .item_box{
-                    &_title{
+
+            .footer_mini_box {
+                .item_box {
+                    &_title {
                         font-size: 17px;
+                        margin-bottom: 15px;
                     }
-                    &_link{
+
+                    &_link {
                         font-size: 13px;
                     }
                 }
@@ -984,6 +999,59 @@
             }
         }
     }
+
+    .footer {
+        padding: 25px 0 40px 0;
+
+        &_box {
+            gap: 60px;
+
+            .newsletter_box {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                &_title {
+                    font-size: 16px;
+                }
+
+                .newsletter_box_input {
+                    display: flex;
+                    align-items: center;
+                    width: 300px;
+                    height: 50px;
+                }
+
+                .newsletter_box_img {
+                    width: 45px;
+                    height: 45px;
+                }
+            }
+
+            .footer_mini_box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                .item_box {
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+
+                    &_title {
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
+
+                    &_link {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(max-width: 550px) {
@@ -1049,7 +1117,7 @@
     }
 
     .intro {
-        height: 200px;
+        height: 250px;
 
         &_box {
             gap: 30px;
@@ -1108,10 +1176,64 @@
             }
         }
     }
+
+    .footer {
+        padding: 20px 0 35px 0;
+
+        &_box {
+            gap: 40px;
+
+            .newsletter_box {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                &_title {
+                    font-size: 15px;
+                }
+
+                .newsletter_box_input {
+                    display: flex;
+                    align-items: center;
+                    width: 250px;
+                    height: 50px;
+                }
+
+                .newsletter_box_img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .footer_mini_box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                .item_box {
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+
+                    &_title {
+                        font-size: 16px;
+                        margin-bottom: 10px;
+                    }
+
+                    &_link {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(max-width: 400px) {
     .intro {
+        height: 200px;
         padding-bottom: 20px;
 
         &_box {
